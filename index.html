@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <title>Learning Bootstrap vs5 with scss</title>
+  </head>
+  <body>
+    <!-- Start the navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/rajeev.png" alt="logo-image" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <ul class="navbar-nav">
+            <li>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"></a></li>
+          </ul>
+          <button type="button" class="rounded-pill btn-rounded">
+            +358 440378568
+            <span> <em class="fas fa-phone"></em></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!--  ****** nav bar end ******* -->
+    <!--  Start the intro section -->
+    <section id="home" class="intro-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 intros">
+            <h1 class="display-2">
+              <span class="display-2--intro">Hey!, I'm Rajeev</span>
+              <span class="display-2--description"
+                >I am Full-stack developer. I design responsive web page and
+                that is my responsibility. I involve in design and create the
+                frontend while similtaneously designing, developing, and
+                debuging databases and the software's backend.</span
+              >
+            </h1>
+            <button type="button" class="rounded-pill btn-rounded">
+              Get in Touch.
+              <span> <em class="fas fa-arrow-right"></em></span>
+            </button>
+          </div>
+          <div class="col-md-6 intros"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End intro section -->
+    <script src="/assets/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
