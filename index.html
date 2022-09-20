@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css" />
     <link
       href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <title>Learning Bootstrap vs5 with scss</title>
@@ -58,15 +63,16 @@
         </div>
       </div>
     </nav>
-    <!--  ****** nav bar end ******* -->
-    <!--  Start the intro section -->
+    <!--  ***** nav bar end ***** -->
+    <!--  START THE INTRO SECTION -->
     <section id="home" class="intro-section">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center text-white">
+          <!--  START THE CONTENT FOR THE INTRO -->
           <div class="col-md-6 intros">
             <h1 class="display-2">
               <span class="display-2--intro">Hey!, I'm Rajeev</span>
-              <span class="display-2--description"
+              <span class="display-2--description lh-base"
                 >I am Full-stack developer. I design responsive web page and
                 that is my responsibility. I involve in design and create the
                 frontend while similtaneously designing, developing, and
@@ -78,12 +84,246 @@
               <span> <em class="fas fa-arrow-right"></em></span>
             </button>
           </div>
-          <div class="col-md-6 intros"></div>
+          <!-- *****end intro***** -->
+          <!--  START THE CONTENT FOR THE VIDEO -->
+          <div class="col-md-6 intros text-end">
+            <div class="video-box">
+              <img
+                src="images/arts/intro-section-illustration.png"
+                alt="video illustration"
+                class="img-fluid"
+              />
+              <a
+                href="#"
+                class="glightbox position-absolute top-50 start-50 translate-middle"
+              >
+                <span>
+                  <em class="fas fa-play-circle"></em>
+                  <span
+                    class="border-animation border-animation--border-1"
+                  ></span>
+                  <span
+                    class="border-animation border-animation--border-2"
+                  ></span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--  ***** end video***** -->
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,128L30,154.7C60,181,120,235,180,266.7C240,299,300,309,360,272C420,235,480,149,540,128C600,107,660,149,720,192C780,235,840,277,900,282.7C960,288,1020,256,1080,208C1140,160,1200,96,1260,80C1320,64,1380,96,1410,112L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- *****End intro section***** -->
+
+    <!--  START THE COMPANIES SECTION -->
+    <section id="companies">
+      <div class="companies">
+        <div class="container">
+          <div class="row text-center">
+            <h4 class="fw-bold lead mb-3">Trusted by companies</h4>
+            <div class="heading-line mb-5"></div>
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- End intro section -->
+    <!--  START THE COMPANIES CONTENT-->
+    <!--  .container>.row>(.col-md-4>.companies__logo-box>img[src="images/companies/company-$.png"][alt="Company
+    $ logo"][title="Company $ logo"].img-fluid)*6 -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="/images/companies/campany-1.png"
+                alt="company 1 logo"
+                title="Company1logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="/images/companies/campany-2.png"
+                alt="company 2 logo"
+                title="Company 2 logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="/images/companies/campany-3.png"
+                alt="company 3 logo"
+                title="Company 3 logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/campany-4.png"
+                alt="company 4 logo"
+                title="Company 4 logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/campany-5.png"
+                alt="company 5 logo"
+                title="Company 5 logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/campany-6.png"
+                alt="company 6 logo"
+                title="Company 6 logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  endof companies section -->
+    <!--  START OF SERVICES SECTION -->
+    <section id="services" class="our-services">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold">Our services</h1>
+          <div class="heading-line mb-5"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row pt-2 pb-2 mt-5 mb-3">
+          <div class="col-md-6 border-right">
+            <div class="bg-white p-3">
+              <h2 class="fw-bold text-capitalize text-center">
+                Our services ranges from initial design to deployment any where
+                any thime.
+              </h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-white p-4 text-start">
+              <p class="fw-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                provident voluptatum voluptates fugiat totam animi, perferendis
+                minima voluptas tenetur, dicta ratione consequuntur nemo optio
+                nam repellendus? Aliquid tempora nihil atque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  START THE CONTENT OF SERVICES  -->
+      <div class="container">
+        <!-- START THE MARKETING CONTENT -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <div class="icon fas fa-paper-plane"></div>
+              <h3 class="display-3--title mt-1">Marketing</h3>
+              <p class="lh-lg">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Explicabo quaerat, laudantium necessitatibus eos obcaecati
+                ullam, suscipit dolores perferendis reiciendis consectetur iure
+                enim quis ad laborum aperiam modi maiores.
+              </p>
+              <button
+                type="button"
+                class="rounded-pill btn-rounded border-primary"
+              >
+                Learn more
+                <span> <em class="fas fa-phone"></em></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content"></div>
+          </div>
+        </div>
+        <!-- START THE WEB DEVELOPMENT CONTENT -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content"></div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <div class="icon fas fa-code"></div>
+              <h3 class="display-3--title mt-1">Web content</h3>
+              <p class="lh-lg">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Explicabo quaerat, laudantium necessitatibus eos obcaecati
+                ullam, suscipit dolores perferendis reiciendis consectetur iure
+                enim quis ad laborum aperiam modi maiores.
+              </p>
+              <button
+                type="button"
+                class="rounded-pill btn-rounded border-primary"
+              >
+                Learn more
+                <span> <em class="fas fa-phone"></em></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- START THE CLOUD HOSTING CONTENT -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <div class="icon fas fa-cloud-upload-alt"></div>
+              <h3 class="display-3--title mt-1">Cloud Hosting</h3>
+              <p class="lh-lg">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Explicabo quaerat, laudantium necessitatibus eos obcaecati
+                ullam, suscipit dolores perferendis reiciendis consectetur iure
+                enim quis ad laborum aperiam modi maiores.
+              </p>
+              <button
+                type="button"
+                class="rounded-pill btn-rounded border-primary"
+              >
+                Learn more
+                <span> <em class="fas fa-phone"></em></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content"></div>
+          </div>
+        </div>
+      </div>
+      <!-- end the content of services -->
+    </section>
+    <!-- end of services section -->
+    <script src="/assets/vendors/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        href: "https://www.youtube.com/watch?v=iJKCj8uAHz8&t=4938s",
+        type: "video",
+        source: "youtube", //vimeo, youtube or local
+        width: 900,
+        autoPlayVideos: true,
+      });
+    </script>
     <script src="/assets/js/bootstrap.bundle.js"></script>
   </body>
 </html>
