@@ -11122,8 +11122,14 @@ textarea.form-control-lg {
   font-weight: 600;
 }
 .contact-box__icon {
-  width: 4rem;
+  width: 2rem;
   stroke: #1ab4a4;
+  padding-top: 0.8rem;
+}
+@media (min-width: 576px) {
+  .contact-box__icon {
+    width: 4rem;
+  }
 }
 .contact-box__info {
   padding: 0.4rem;
@@ -11131,11 +11137,89 @@ textarea.form-control-lg {
 .contact-box__info--title {
   color: #fff;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1rem;
+}
+@media (min-width: 576px) {
+  .contact-box__info--title {
+    font-size: 1.4rem;
+  }
 }
 .contact-box__info--subtitle {
   color: #6c757d;
+  font-size: 0.8rem;
+}
+@media (min-width: 576px) {
+  .contact-box__info--subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Style the social media contetn */
+.footer-sm a {
+  color: #fff;
+}
+.footer-sm a i {
   font-size: 1rem;
+  margin-left: 1rem;
+}
+@media (min-width: 576px) {
+  .footer-sm a i {
+    font-size: 1.6rem;
+  }
+}
+
+/* Style the company info */
+.company-list {
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+.company-list li {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.company-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+.company-list li a:hover {
+  color: #1ab4a4;
+}
+
+/* style the copyright content */
+.footer-bottom {
+  background-color: #000;
+}
+.footer-bottom__copyright {
+  color: #6c757d;
+  font-weight: 400;
+}
+.footer-bottom__copyright a {
+  color: #dee2e6;
+  text-decoration: none;
+}
+.footer-bottom__copyright a:hover {
+  color: #1ab4a4;
+  text-decoration: underline;
+}
+
+/* style the back to top button*/
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+  background-color: #1ab4a4;
+}
+.back-to-top i {
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */
